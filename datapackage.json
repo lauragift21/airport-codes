@@ -1,0 +1,346 @@
+{
+  "bytes": 35144039,
+  "count_of_rows": 56060,
+  "datahub": {
+    "created": "2017-11-09T01:39:11.082123",
+    "findability": "published",
+    "flowid": "core/airport-codes/792",
+    "modified": "2020-04-13T00:00:06.160037",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "00df1c6262e8c163f6810508ff2e58e4",
+  "homepage": "http://www.ourairports.com/",
+  "id": "core/airport-codes",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "name": "open_data_commons_public_domain_dedication_and_license_v1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "airport-codes",
+  "profile": "data-package",
+  "resources": [
+    {
+      "bytes": 6084699,
+      "count_of_rows": 56060,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/e332f2cdfff1e139d0b87ba9dc6ccf98.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "00cbeb992107ca148b7900c48bedc653",
+      "mediatype": "text/csv",
+      "name": "airport-codes_original",
+      "path": "archive/airport-codes.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "ident",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elevation_ft",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "continent",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso_country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso_region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "municipality",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gps_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iata_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "local_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "coordinates",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 708,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmp7mz3oh64/core/airport-codes/validation_report/data/8ef9f32a31268557f6efc1ca61512b98/validation_report.json",
+      "format": "json",
+      "hash": "8ef9f32a31268557f6efc1ca61512b98",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 6104114,
+      "count_of_rows": 56060,
+      "datahub": {
+        "derivedFrom": [
+          "airport-codes"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp7mz3oh64/core/airport-codes/airport-codes_csv/data/12b61734c14a6829c903b38e90333f12/airport-codes_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "12b61734c14a6829c903b38e90333f12",
+      "mediatype": "text/csv",
+      "name": "airport-codes_csv",
+      "path": "data/airport-codes_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 56060,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "ident",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elevation_ft",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "continent",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso_country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso_region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "municipality",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gps_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iata_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "local_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "coordinates",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 16867820,
+      "count_of_rows": 56060,
+      "datahub": {
+        "derivedFrom": [
+          "airport-codes"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp7mz3oh64/core/airport-codes/airport-codes_json/data/d77ae44c084e71336b285e92edec5c45/airport-codes_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "d77ae44c084e71336b285e92edec5c45",
+      "mediatype": "text/csv",
+      "name": "airport-codes_json",
+      "path": "data/airport-codes_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 56060,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "ident",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elevation_ft",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "continent",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso_country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso_region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "municipality",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gps_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iata_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "local_code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "coordinates",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1999,
+      "dpp:streamedFrom": "/tmp/tmptpwckpdc/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Our Airports",
+      "path": "http://ourairports.com/data/",
+      "title": "Our Airports"
+    }
+  ],
+  "title": "Airport Codes",
+  "version": "0.2.0"
+}
